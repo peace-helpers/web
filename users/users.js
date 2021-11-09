@@ -49,7 +49,6 @@ $extendPeace({
     async signOut () {
       try {
         const response = await fetch(`${ $peace.users.API }sign-out`, {
-          method: 'POST',
           credentials: 'include',
           withCredentials: true,
           headers: {
@@ -66,7 +65,6 @@ $extendPeace({
     async getSessions () {
       try {
         const response = await fetch(`${ $peace.users.API }sessions`, {
-          method: 'POST',
           credentials: 'include',
           withCredentials: true,
           headers: {
